@@ -5,23 +5,42 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PersonalNotesDesktopCRUD.UserInterface
 {
     internal class ReadDataForm : IReadDataForm
     {
-        IComponent _component;
-        ReadDataForm(IComponent component) 
-        { _component = component;
+        TextBox _componentTextBox;
+        ListBox _componentListBox;
+        public ReadDataForm(TextBox textBox, ListBox notesListBox) 
+        { 
+            _componentTextBox = textBox;
+            _componentListBox = notesListBox;
+            
+        }
+        public ReadDataForm(ListBox listBoxComponent)
+        {
+            _componentListBox = listBoxComponent;
         }
         public string GetContent()
         {
-            throw new NotImplementedException();
+
+            return _componentTextBox.Text;
+        }
+
+        public int GetSelectedNoteId()
+        {
+
+            var id = _componentListBox.SelectedIndex;
+
+            return id;
+
         }
 
         public string GetTitle()
         {
-            throw new NotImplementedException();
+            return _componentTextBox.Text;
         }
     }
 }

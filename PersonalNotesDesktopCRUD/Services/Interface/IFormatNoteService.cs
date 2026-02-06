@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PersonalNotesDesktopCRUD.Services.Interface
+﻿namespace PersonalNotesDesktopCRUD
 {
     public interface IFormatNoteService
     {
-        string FormatNote(string title, string content);
+        string FormatNoteForListBox(string title, string content);
     }
 }

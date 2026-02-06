@@ -70,26 +70,23 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\FormatNoteService.cs" />
+    <Compile Include="Services\Interface\IFormatNoteService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Decorator\FormatStyleAddTags.cs" />
-    <Compile Include="Services\Decorator\FormatStyleLowerCase.cs" />
-    <Compile Include="Services\Decorator\FormatStyleMessage.cs" />
-    <Compile Include="Services\Decorator\FormatStyleUpperCase.cs" />
-    <Compile Include="Services\FormatingStyleMessage.cs" />
-    <Compile Include="Services\Decorator\Interfaces\IFormatingStyleMessage.cs" />
     <Compile Include="Repositories\Interfaces\IReadRepositoriesService.cs" />
     <Compile Include="Repositories\Interfaces\IWriteRepositoryService.cs" />
     <Compile Include="Repositories\NoteDbContext.cs" />
     <Compile Include="Repositories\ReadRepositories.cs" />
     <Compile Include="Repositories\WriteRepositories.cs" />
-    <Compile Include="Services\Interface\IFormatNoteService.cs" />
     <Compile Include="Services\Interface\INoteReadService.cs" />
     <Compile Include="Services\Interface\INoteWriteService.cs" />
     <Compile Include="Services\NoteReadService.cs" />
     <Compile Include="Services\NoteWriteService.cs" />
     <Compile Include="UserInterface\Interface\IReadDataForm.cs" />
+    <Compile Include="UserInterface\Interface\IWriteDataForm.cs" />
     <Compile Include="UserInterface\ReadDataForm.cs" />
+    <Compile Include="UserInterface\WriteDataForm.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>

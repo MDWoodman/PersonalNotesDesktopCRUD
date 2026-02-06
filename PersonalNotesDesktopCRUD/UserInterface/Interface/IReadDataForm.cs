@@ -11,6 +11,9 @@ namespace PersonalNotesDesktopCRUD.UserInterface.Interface
     {
         string GetTitle();
         String GetContent();
+        int GetSelectedNoteId();
+
+
 
     }
 }
